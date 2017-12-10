@@ -1,0 +1,69 @@
+03:25:20:820	10cc	Check and remove old log files...
+03:25:20:820	10cc	args: -epool asia1.ethermine.org:4444 -ewal 0xE8C69AD85882b9b677FF91481353275E2ecf3C3D.alb_mining_rig_1 -epsw x -esm 0 -mode 1 -dcri 1 -r 60 
+03:25:20:820	10cc	
+03:25:20:820	10cc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+03:25:20:820	10cc	บ     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.2      บ
+03:25:20:835	10cc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+03:25:20:835	10cc	
+03:25:21:054	10cc	ETH: 1 pool is specified
+03:25:21:054	10cc	Main Ethereum pool is asia1.ethermine.org:4444
+03:25:21:616	10cc	OpenCL platform: NVIDIA CUDA
+03:25:21:616	10cc	AMD OpenCL platform not found 
+03:25:22:257	10cc	CUDA initializing...
+
+03:25:22:257	10cc	NVIDIA Cards available: 6 
+03:25:22:257	10cc	CUDA Driver Version/Runtime Version: 8.0/8.0
+03:25:22:288	10cc	GPU #0: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:25:22:288	10cc	GPU #1: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:25:22:288	10cc	GPU #2: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:25:22:288	10cc	GPU #3: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:25:22:304	10cc	GPU #4: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:25:22:304	10cc	GPU #5: GeForce GTX 1070, 8192 MB available, 15 compute units, capability: 6.1
+
+03:25:22:304	10cc	Total cards: 6 
+03:25:26:384	10cc	No AMD cards in the list, ADL library will not be used.
+03:25:26:384	10cc	NVML version: 8.372.90
+03:25:27:399	6ac	ETH: Stratum - connecting to 'asia1.ethermine.org' <139.99.8.158> port 4444
+03:25:27:446	6ac	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xE8C69AD85882b9b677FF91481353275E2ecf3C3D.alb_mining_rig_1", "x"], "id": 2, "method": "eth_submitLogin"}
+
+03:25:27:462	6ac	ETH: Stratum - Connected (asia1.ethermine.org:4444)
+03:25:27:509	10cc	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+03:25:27:509	6ac	got 39 bytes
+03:25:27:509	10cc	ETH: eth-proxy stratum mode
+03:25:27:509	6ac	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+03:25:27:509	10cc	Watchdog enabled
+03:25:27:524	10cc	Remote management (READ-ONLY MODE) is enabled on port 3333
+03:25:27:509	6ac	parse packet: 38
+03:25:27:524	10cc	
+03:25:27:524	6ac	ETH: Authorized
+03:25:27:540	6ac	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+03:25:27:540	6ac	new buf size: 0
+03:25:27:587	6ac	got 248 bytes
+03:25:27:587	6ac	buf: {"id":3,"jsonrpc":"2.0","result":["0x837cbb79d9541e3d15b34e091aac87db7d5c87dbc6577ed3c8e5063ba93adfc6","0x7b1e42ac7d205c8da33a3dea0e5fd6aa0261c13f0a8e451454721085d1323eec","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x47b0e1"]}
+
+03:25:27:587	6ac	parse packet: 247
+03:25:27:587	6ac	ETH: job changed
+03:25:27:587	6ac	new buf size: 0
+03:25:27:665	1dcc	Setting DAG epoch #156...
+03:25:29:540	1dcc	Setting DAG epoch #156 for GPU5
+03:25:29:540	878	Setting DAG epoch #156 for GPU0
+03:25:29:540	1c40	Setting DAG epoch #156 for GPU3
+03:25:29:540	80c	Setting DAG epoch #156 for GPU4
+03:25:29:540	1540	Setting DAG epoch #156 for GPU2
+03:25:29:540	1a98	Setting DAG epoch #156 for GPU1
+03:25:29:556	1dcc	Create GPU buffer for GPU5
+03:25:29:556	1a98	Create GPU buffer for GPU1
+03:25:29:556	1c40	Create GPU buffer for GPU3
+03:25:29:556	80c	Create GPU buffer for GPU4
+03:25:29:556	1540	Create GPU buffer for GPU2
+03:25:29:556	878	Create GPU buffer for GPU0
+03:25:29:728	878	CUDA error - cannot allocate big buffer for DAG. Check readme.txt for possible solutions.
+03:25:32:744	878	Set global fail flag, failed GPU0
+03:25:32:744	878	GPU 0 failed
