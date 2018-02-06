@@ -77,7 +77,7 @@ void CLogParser::ProcessLog(const std::wstring & strLogFile)
 			}
 			else
 			{
-				CTime ExtendedTime = m_vecPeriods.back().End + CTimeSpan(0, 0, 30, 0); // 30 minutes buffer
+				CTime ExtendedTime = m_vecPeriods.back().End + CTimeSpan(0, 0, 10, 0); // 10 minutes buffer
 				if (ExtendedTime < CurTime)
 				{
 					m_vecPeriods.emplace_back(PeriodRange(CurTime)); // add a new time period
@@ -130,7 +130,7 @@ void CLogParser::ReassignPeriodRange(const std::wstring & strRangeFile)
 				&& IsBetween(ctStartTime, ctEndTime, it.End))
 			{
 				vecPeriods.emplace_back(PeriodRange(it.Start, ctStartTime));
-				vecPeriods.emplace_back(PeriodRange(ctStartTime, ctEndTime));
+				vecPeriods.emplace_back(PeriodRange(ctStartTime, it.End));
 			}
 			else
 			{
